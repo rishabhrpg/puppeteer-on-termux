@@ -1,5 +1,5 @@
 #### puppeteer-on-termux
-*Run Puppeteer on termux
+* Run Puppeteer on termux
 
 **Assumptions**
 * You have termux installed and have sufficient permissions
@@ -32,7 +32,7 @@ node index.js
 * If you see a message "screenshot saved" then puppeteer is sucesfully configured to run on termux
 * Use this repo as starting point as it has correct args included to sucesfully run chromium on termux
 
-## Resources
+## References
 * [Puppeteer running as root without --no-sandbox is not supported](https://www.xspdf.com/resolution/50662388.html)
 * [Set up Headless Chrome Node.js server in Docker](https://blog.logrocket.com/how-to-set-up-a-headless-chrome-node-js-server-in-docker/)
 * [Enjoyable browser automation with Puppeteer](https://www.lambrospetrou.com/articles/enjoyable-browser-automation-puppeteer-playwright/)
