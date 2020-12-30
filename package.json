@@ -1,0 +1,12 @@
+{
+  "name": "puppeteer-on-termux",
+  "version": "1.0",
+  "description": "Run pupeeteer on termux",
+  "main": "index.js",
+  "repository": "https://github.com/rishabhrpg/puppeteer-on-termux.git",
+  "author": "rishabhrpg",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  }
+}
