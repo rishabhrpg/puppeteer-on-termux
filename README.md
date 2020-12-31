@@ -1,5 +1,5 @@
 #### puppeteer-on-termux
-* Run Puppeteer on termux
+# Run Puppeteer on termux
 
 **Assumptions**
 * You have termux installed and have sufficient permissions
