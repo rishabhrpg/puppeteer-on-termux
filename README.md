@@ -1,18 +1,22 @@
-#### puppeteer-on-termux
+# Puppeteer on termux
 
-# Run Puppeteer on [Termux](https://termux.com/)
-* Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required. A minimal base system is installed automatically - additional packages are available using the APT package manager.
+Run Puppeteer on [Termux](https://termux.com/)
+
+### What is Termux?
+Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required. A minimal base system is installed automatically - additional packages are available using the APT package manager.
+
+<img alt="screenshot" src="./.github/puppeteer_framed.png" width="200">
 
 **Assumptions**
 * You have termux installed and have sufficient permissions
-* You have loggedin as root user
+* You have logged-in as root user
 * You are okay with running Puppeteer inside a container (Alpine)
 
 **Gotchas**
 * There is no build of Google Chrome available for ARM at this moment, so using chromium instead.
-* Installing chromium on Termux directly requires snap which is another big hurdle so alternively using alpine distro here.
+* Installing chromium on Termux directly requires snap which is another big hurdle so alternatively using alpine distro here.
 
-**Install Prerequisite**
+### Install Prerequisites
 ```
 proot-distro install alpine
 proot-distro login alpine
@@ -23,16 +27,19 @@ apk update && apk add --no-cache nmap && \
   apk add --no-cache \
   chromium
 ```
+* Node js v12.14+
+* Yarn v1.22+
 
-**Get started with puppeteer**
+### Usage
 ```
 git clone https://github.com/rishabhrpg/puppeteer-on-termux.git
 cd puppeteer-on-termux
-yarn
+yarn install
 node index.js
 ```
-* If you see a message "screenshot saved" then puppeteer is sucesfully configured to run on termux
-* Use this repo as starting point as it has correct args included to sucesfully run chromium on termux
+
+* If you see a message "screenshot saved" then puppeteer is successfully configured to run on termux
+* Use this repo as starting point as it has correct args included to successfully run chromium on termux
 
 ## References
 * [Puppeteer running as root without --no-sandbox is not supported](https://www.xspdf.com/resolution/50662388.html)
@@ -40,5 +47,5 @@ node index.js
 * [Enjoyable browser automation with Puppeteer](https://www.lambrospetrou.com/articles/enjoyable-browser-automation-puppeteer-playwright/)
 * [Set Chrome Flags in Puppeteer](https://stackoverflow.com/questions/50607866/setting-specific-chrome-flags-in-puppeteer-enable-and-disable)
 
-## Changelog
-on the way
+### License
+MIT
