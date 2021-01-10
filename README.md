@@ -18,6 +18,7 @@ Termux is an Android terminal emulator and Linux environment app that works dire
 
 ### Install Prerequisites
 ```
+pkg install proot-distro
 proot-distro install alpine
 proot-distro login alpine
 apk update && apk add --no-cache nmap && \
