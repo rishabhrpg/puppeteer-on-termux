@@ -41,6 +41,7 @@ node index.js
 
 * If you see a message "screenshot saved" then puppeteer is successfully configured to run on termux
 * Use this repo as starting point as it has correct args included to successfully run chromium on termux
+* To view screenshot on your device you can run `npx http-server` and aceess the screenshot directory from a browser.
 
 ## References
 * [Puppeteer running as root without --no-sandbox is not supported](https://www.xspdf.com/resolution/50662388.html)
